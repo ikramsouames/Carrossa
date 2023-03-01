@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9F9F9F"
+    android:backgroundTint="#F8F8F8"
+    tools:context=".Fragment4">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView10"
+        android:layout_width="182dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/textView31">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/creditnardnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:drawableStart="@drawable/ic_credit_card_focused"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="TextView"
+                android:textColor="#484747"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Driving license"
+        android:textColor="#6D6D6D"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/cardView10"
+        app:layout_constraintTop_toBottomOf="@+id/cardView10" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Credit Card Number"
+        android:textColor="#6D6D6D"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/cardView8"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Validity"
+        android:textColor="#6D6D6D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView31"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintStart_toEndOf="@+id/textView31"
+        app:layout_constraintTop_toTopOf="@+id/textView31"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Phone Number"
+        android:textColor="#6D6D6D"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilpic" />
+
+    <TextView
+        android:id="@+id/modele3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="My Profile"
+        android:textColor="#484747"
+        android:textSize="24dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="40dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="25dp"
+        android:src="?attr/homeAsUpIndicator"
+        android:tint="#37A590"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilpic"
+        android:layout_width="77dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:keepScreenOn="true"
+        android:src="@drawable/profilstandard"
+        android:visibility="visible"
+        app:circularflow_angles="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        tools:src="@drawable/profilstandard"
+        tools:visibility="visible" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView9"
+        android:layout_width="146dp"
+        android:layout_height="46dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView10"
+        app:layout_constraintEnd_toEndOf="@+id/cardView8"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="@+id/cardView10">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/creditcardvalidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="TextView"
+                android:textColor="#484747"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.325"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.523" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/exit"
+        android:layout_width="34dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="28dp"
+        android:tint="#37A590"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toEndOf="@+id/modele3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logout" />
+
+    <ImageView
+        android:id="@+id/addpic"
+        android:layout_width="37dp"
+        android:layout_height="25dp"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_photo_camera"
+        app:layout_constraintBottom_toBottomOf="@+id/profilpic"
+        app:layout_constraintEnd_toEndOf="@+id/profilpic"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="@+id/profilpic"
+        app:layout_constraintTop_toTopOf="@+id/profilpic"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView28">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:drawableStart="@drawable/ic_call_focused"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="TextView"
+                android:textColor="#484747"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="TextView"
+        android:textColor="#484747"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profilpic"
+        app:layout_constraintStart_toEndOf="@+id/profilpic"
+        app:layout_constraintTop_toTopOf="@+id/profilpic" />
+
+    <ImageView
+        android:id="@+id/driving"
+        android:layout_width="348dp"
+        android:layout_height="224dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32"
+        app:layout_constraintVertical_bias="0.096"
+        tools:src="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

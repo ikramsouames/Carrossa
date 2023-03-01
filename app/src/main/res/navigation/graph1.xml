@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph1"
+    app:startDestination="@id/fragment1">
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.carrossa.Fragment1"
+        android:label="fragment_1"
+        tools:layout="@layout/fragment_1" >
+        <action
+            android:id="@+id/action_fragment1_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_fragment1_to_fragment4"
+            app:destination="@id/fragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.carrossa.Fragment2"
+        android:label="fragment_2"
+        tools:layout="@layout/fragment_2" >
+        <action
+            android:id="@+id/action_fragment2_to_fragment2_1"
+            app:destination="@id/fragment2_1" />
+        <action
+            android:id="@+id/action_fragment2_to_noreservation"
+            app:destination="@id/noreservation" />
+        <action
+            android:id="@+id/action_fragment2_to_listBluetooth"
+            app:destination="@id/listBluetooth" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.car.detailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_fragment1"
+            app:destination="@id/fragment1" />
+        <action
+            android:id="@+id/action_detailFragment_to_bookingFragment"
+            app:destination="@id/bookingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.example.carrossa.Fragment3"
+        android:label="fragment_3"
+        tools:layout="@layout/fragment_3" >
+        <action
+            android:id="@+id/action_fragment3_to_notrajets"
+            app:destination="@id/notrajets" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment4"
+        android:name="com.example.carrossa.Fragment4"
+        android:label="fragment_fragment4"
+        tools:layout="@layout/fragment4" >
+        <action
+            android:id="@+id/action_fragment4_to_fragment4_1"
+            app:destination="@id/fragment4_1" />
+        <action
+            android:id="@+id/action_fragment4_to_fragment1"
+            app:destination="@id/fragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment4_1"
+        android:name="com.example.carrossa.Fragment4_1"
+        android:label="fragment_fragment4_1"
+        tools:layout="@layout/fragment_fragment4_1" >
+        <action
+            android:id="@+id/action_fragment4_1_to_fragment4"
+            app:destination="@id/fragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.example.carrossa.BookingFragment"
+        android:label="fragment_booking"
+        tools:layout="@layout/fragment_booking" >
+        <action
+            android:id="@+id/action_bookingFragment_to_fragment2"
+            app:destination="@id/fragment2" />
+        <action
+            android:id="@+id/action_bookingFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2_1"
+        android:name="com.example.carrossa.Fragment2_1"
+        android:label="Fragment2_1" >
+        <action
+            android:id="@+id/action_fragment2_1_to_fragment2"
+            app:destination="@id/fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/notrajets"
+        android:name="com.example.carrossa.Notrajets"
+        android:label="Nofavoritescar" >
+        <action
+            android:id="@+id/action_notrajets_to_fragment1"
+            app:destination="@id/fragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/noreservation"
+        android:name="com.example.carrossa.Noreservation"
+        android:label="Noreservation" >
+        <action
+            android:id="@+id/action_noreservation_to_fragment1"
+            app:destination="@id/fragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/listBluetooth"
+        android:name="com.example.carrossa.ListBluetooth"
+        android:label="fragment_list_bluetooth"
+        tools:layout="@layout/fragment_list_bluetooth" >
+        <action
+            android:id="@+id/action_listBluetooth_to_unlockCar"
+            app:destination="@id/unlockCar" />
+    </fragment>
+    <fragment
+        android:id="@+id/unlockCar"
+        android:name="com.example.carrossa.UnlockCar"
+        android:label="fragment_unlock_car"
+        tools:layout="@layout/fragment_unlock_car" >
+        <action
+            android:id="@+id/action_unlockCar_to_lockCar"
+            app:destination="@id/lockCar" />
+    </fragment>
+    <fragment
+        android:id="@+id/lockCar"
+        android:name="com.example.carrossa.LockCar"
+        android:label="LockCar" >
+        <action
+            android:id="@+id/action_lockCar_to_unlockCar"
+            app:destination="@id/unlockCar" />
+        <action
+            android:id="@+id/action_lockCar_to_fragment3"
+            app:destination="@id/fragment3" />
+    </fragment>
+</navigation>

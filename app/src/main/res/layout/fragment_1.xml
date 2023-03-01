@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:circularflow_defaultRadius="20dp"
+    app:circularflow_radiusInDP="20dp"
+    tools:context=".Fragment1">
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_search"
+        android:drawableEnd="@drawable/custom_search_icon"
+        android:elevation="5dp"
+        android:hint="Search"
+        android:paddingStart="12dp"
+        android:paddingEnd="8dp"
+        android:textAlignment="viewStart"
+        app:barrierMargin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView10"
+        android:layout_width="59dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        app:circularflow_angles="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:src="@drawable/profilstandard" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="296dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Let's find "
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="224dp"
+        app:circularflow_defaultRadius="20dp"
+        app:circularflow_radiusInDP="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="170dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="car near you !"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

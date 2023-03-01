@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".UnlockCar">
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="325dp"
+        android:layout_height="391dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ferme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unlock" />
+
+    <Button
+        android:id="@+id/EndTrip"
+        android:layout_width="188dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#37A590"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="End your trip"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20"
+        app:layout_constraintVertical_bias="0.35000002" />
+
+    <Button
+        android:id="@+id/unlock"
+        android:layout_width="122dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="@color/white"
+        android:text="Unlock"
+        android:textColor="#646464"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_lock_open"
+        app:iconPadding="0dp"
+        app:iconTint="#646464"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#646464"
+        app:strokeWidth="5dp" />
+
+    <Button
+        android:id="@+id/lock"
+        android:layout_width="122dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/white"
+        android:text="Lock"
+        android:textColor="#646464"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_lock"
+        app:iconPadding="0dp"
+        app:iconTint="#37A590"
+        app:layout_constraintEnd_toStartOf="@+id/unlock"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#37A590"
+        app:strokeWidth="5dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

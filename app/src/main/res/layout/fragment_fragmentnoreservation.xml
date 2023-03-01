@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment2">
+
+    <TextView
+        android:id="@+id/insurance5"
+        android:layout_width="213dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Book a car now !"
+        android:textAlignment="center"
+        android:textColor="#646464"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insurance4" />
+
+    <TextView
+        android:id="@+id/insurance4"
+        android:layout_width="345dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="No reservations at the  moment"
+        android:textAlignment="center"
+        android:textColor="#484747"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <Button
+        android:id="@+id/buttoncar2"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#37A590"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Search a car"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insurance5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_search"
+        android:drawableEnd="@drawable/custom_search_icon"
+        android:elevation="5dp"
+        android:hint="Search"
+        android:paddingStart="12dp"
+        android:paddingEnd="8dp"
+        android:textAlignment="viewStart"
+        app:barrierMargin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="My reservations"
+        android:textColor="#047A64"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

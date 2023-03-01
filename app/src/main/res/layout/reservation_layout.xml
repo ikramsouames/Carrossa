@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="@null"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="23dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/horloge"
+                app:layout_constraintEnd_toEndOf="@+id/imageView27"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView27"
+                app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="154dp"
+                android:layout_height="108dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.177"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/date_debut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView27"
+                app:layout_constraintStart_toEndOf="@+id/imageView27"
+                app:layout_constraintTop_toTopOf="@+id/imageView27"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/matricule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/photo"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/modele"
+                android:layout_width="78dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.117"
+                app:layout_constraintStart_toEndOf="@+id/photo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="21dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/iconcalendar"
+                app:layout_constraintStart_toStartOf="@+id/modele"
+                app:layout_constraintTop_toBottomOf="@+id/modele" />
+
+            <TextView
+                android:id="@+id/time_debut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="TextView"
+
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView29"
+                app:layout_constraintStart_toStartOf="@+id/date_debut"
+                app:layout_constraintTop_toTopOf="@+id/imageView29"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="TextView"
+
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView25"
+                app:layout_constraintStart_toStartOf="@+id/time_debut"
+                app:layout_constraintTop_toBottomOf="@+id/imageView29" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="#37A590"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Control your car"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView25"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageView29"
+                app:layout_constraintTop_toBottomOf="@+id/imageView29"
+                app:srcCompat="@drawable/ic_lock_2" />
+
+            <TextView
+                android:id="@+id/PIN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView25"
+                app:layout_constraintStart_toStartOf="@+id/time_debut"
+                app:layout_constraintTop_toBottomOf="@+id/imageView29" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
